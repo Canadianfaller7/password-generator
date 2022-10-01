@@ -10,7 +10,7 @@ generateBtn = document.querySelector("#generate");
 // Write password to the #password input
 const writePassword = () => {
   generatePassword()
-  let password = randomizePassword();
+  let password = passwordCriteria();
   let passwordText = document.querySelector("#password");
 
   passwordText.value = password;
@@ -29,17 +29,16 @@ const generatePassword = () => {
     generatePassword()
   }
   else{
-    passwordCriteria()
+    return passwordLength;
   }
   
-  return passwordLength;
+  
 }
 
 
-const passwordCriteria = (passCombo) => {
+const passwordCriteria = () => {
 
-  
-  
+  let passCombo;
   let confirmUpper = confirm("Do you want to have Uppercase letters?")
   let confirmLower = confirm("Do you want to have Lowercase letters?")
   let confirmNum = confirm("Do you want to have Numbers?")
@@ -101,7 +100,7 @@ const passwordCriteria = (passCombo) => {
   return passCombo
 }
 
-const randomizePassword = (passwordLength) => {
+const randomizePassword = () => {
 
   let randomPassword = []
   
