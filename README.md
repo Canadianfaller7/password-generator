@@ -18,4 +18,4 @@ N/A
 ## License
 Please refer to the LICENSE in the repo.
 
-[!screenshot ]"./
+![Alt text](./assets/images/random-password-1.png?raw=true "Optional Title")
